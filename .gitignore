@@ -1,0 +1,24 @@
+# Environment Variables
+.env
+.env.local
+.env.production
+.env.*.local
+.venv
+# API Keys and Secrets
+*.key
+*.pem
+secrets/
+
+# Logs
+logs/
+*.log
+
+# Database
+*.db
+*.sqlite3
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
