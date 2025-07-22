@@ -12,12 +12,12 @@ import pandas as pd
 from concurrent.futures import ThreadPoolExecutor
 import threading
 
-from frontend.components.agent_status_panel import AgentStatusPanel
-from frontend.components.workflow_visualizer import WorkflowVisualizer
-from frontend.components.real_time_updates import RealTimeUpdates
-from frontend.components.content_comparison import ContentComparison
-from frontend.utils.api_client import APIClient
-from frontend.utils.websocket_client import WebSocketClient
+from components.agent_status_panel import AgentStatusPanel
+from components.workflow_visualizer import WorkflowVisualizer
+from components.real_time_updates import RealTimeUpdates
+from components.content_comparison import ContentComparison
+from utils.api_client import APIClient
+from utils.websocket_client import WebSocketClient
 
 # Configure Streamlit page
 st.set_page_config(
