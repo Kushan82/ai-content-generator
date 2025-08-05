@@ -626,7 +626,7 @@ class MultiAgentDashboard:
         st.header("🔄 Content Comparison & Optimization")
         
         # Use ContentComparison component
-        self.content_comparison.render_comparison_interface()
+        self.content_comparison.render_comparison_interface(st.session_state.content_variations)
         
         # Content library management
         st.markdown("---")

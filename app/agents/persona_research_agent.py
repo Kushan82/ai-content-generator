@@ -6,6 +6,7 @@ from app.agents.base_agent import BaseAgent, TaskRequest
 from app.models.agent_schemas import AgentCapability, AgentStatus
 from app.services.llm_service import LLMService, LLMRequest
 from app.core.config import settings
+from app.services.persona_service import PersonaService
 
 class PersonaResearchAgent(BaseAgent):
     """
@@ -54,8 +55,9 @@ class PersonaResearchAgent(BaseAgent):
             role="Market Research & Demographic Analysis",
             llm_service=llm_service,
             capabilities=capabilities
+            
         )
-        
+        self.persona_service = PersonaService()
         # Persona research templates and methodologies
         self.research_frameworks = {
             "demographic": self._get_demographic_framework(),

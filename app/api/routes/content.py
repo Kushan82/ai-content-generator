@@ -229,7 +229,7 @@ async def get_available_personas():
         # Create temporary persona research agent to get persona data
         persona_agent = PersonaResearchAgent(llm_service)
         personas = persona_agent.persona_service.list_personas()
-        
+
         return personas
     
     except Exception as e:
